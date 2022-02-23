@@ -15,7 +15,7 @@ def run():
         ydl.download([video_info['webpage_url']])
 
     print("Download complete... {}".format(filename))
-    print("File at -> This PC > Windows(C:) > Users > arjns > PyCharmProjects > Youtube to MP3 & MP4")
+    # print(" ") <--- ADD PATH
 
 if __name__=='__main__':
     run()
