@@ -1,4 +1,6 @@
 # Youtube to MP3 and MP4
+// UPDATE: This script works for Soundcloud links too!
+
 Simple YTMP3/YTMP4 downloader using youtube_dl
 
 Steps to setup:
