@@ -1,7 +1,7 @@
-import youtube_dl
+import yt_dlp
 def run():
     video_url = input("Enter URL: ")
-    video_info = youtube_dl.YoutubeDL().extract_info(
+    video_info = yt_dlp.YoutubeDL().extract_info(
         url = video_url,download=False
     )
     filename = f"{video_info['title']}.mp3"
@@ -11,7 +11,7 @@ def run():
         'outtmpl':filename,
     }
 
-    with youtube_dl.YoutubeDL(options) as ydl:
+    with yt_dlp.YoutubeDL(options) as ydl:
         ydl.download([video_info['webpage_url']])
 
     print("Download complete... {}".format(filename))
