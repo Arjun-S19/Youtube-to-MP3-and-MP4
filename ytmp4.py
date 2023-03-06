@@ -1,9 +1,9 @@
 from __future__ import unicode_literals
-import youtube_dl
+import yt_dlp
 
 ydl_opts = {}
 video_url = input("Enter URL: ")
-with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+with yt_dlp.YoutubeDL(ydl_opts) as ydl:
     ydl.download([video_url])
 
 # print(" ") <--- ADD PATH
